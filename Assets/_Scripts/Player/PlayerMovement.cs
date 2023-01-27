@@ -19,6 +19,6 @@ public class PlayerMovement : MonoBehaviour
         float xPos = (Input.mousePosition.x - halfScreen) / halfScreen;
         float finalXPos = Mathf.Clamp(xPos * limitValue, -limitValue, limitValue);
 
-        capsuleTransform.localPosition = new Vector3(finalXPos, 1, 0);
+        capsuleTransform.localPosition = new Vector3(finalXPos, 0, 0);
     }
 }
